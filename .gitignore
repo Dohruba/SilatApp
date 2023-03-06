@@ -9,6 +9,9 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Mm]emoryCaptures/
+/[Uu]ser[Ss]ettings/
+/[Rr]ecordings/
+/[Aa]ssets/Plugins/Editor/JetBrains*
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
@@ -57,4 +60,8 @@ sysinfo.txt
 
 # Crashlytics generated file
 crashlytics-build.properties
+/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
+/[Aa]ssets/[Ss]treamingAssets/aa/*
+/Assets/Editor/Vuforia/ImageTargetTextures/ExcerciseOneAR.meta
+/Packages/com.ptc.vuforia.engine-10.12.3.tgz
 
