@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Video;
+using TMPro;
+using System;
 
 public enum State
 {
@@ -13,13 +15,94 @@ public enum State
 public class Manager : MonoBehaviour
 {
     [SerializeField]
-    private VideoPlayer videoPanel;
+    private GameObject idleVideoPanel;
+    [SerializeField]
+    private GameObject interactionVideoPanel;
+
+    private VideoPlayer idleVideoPlayer;
+    private VideoPlayer interactionVideoPlayer;
+
+    [SerializeField]
+    private TMP_Text descriptionPanel;
+    [SerializeField]
+    private TMP_Text title;
+    private State state;
+
+    private bool allowStateChange;
+
 
     private void Start()
     {
-        if (videoPanel.isPlaying)
-        {
+        idleVideoPlayer = idleVideoPanel.GetComponent<VideoPlayer>();
+        interactionVideoPlayer = interactionVideoPanel.GetComponent<VideoPlayer>();
+        state = State.idle;
+        EnterIdleState();
+        StartCoroutine(UpdateState());
+    }
 
+    public void CallUpdateState(State newState)
+    {
+        state = newState;
+    }
+    private IEnumerator UpdateState()
+    {
+        State oldState = state;
+
+        while (allowStateChange)
+        {
+            yield return new WaitUntil(() => oldState != state);
+            OnStateChange();
+            oldState = state;
+        }
+    }
+
+    private void OnStateChange()
+    {
+        switch (state)
+        {
+            case State.idle:
+                EnterIdleState();
+                break;
+            case State.interacting:
+                EnterInteractiveState();
+                break;
+            case State.photos:
+                EnterPhotoState();
+                break;
+            case State.end:
+                EnterEndState();
+                break;
+            default:
+                break;
+        }
+    }
+
+    private void EnterEndState()
+    {
+        throw new NotImplementedException();
+    }
+
+    private void EnterPhotoState()
+    {
+        throw new NotImplementedException();
+    }
+
+    private void EnterInteractiveState()
+    {
+        throw new NotImplementedException();
+    }
+
+    private void EnterIdleState()
+    {
+        if (!idleVideoPlayer.isPlaying || !idleVideoPanel.activeSelf)
+        {
+            idleVideoPanel.SetActive(true);
+            idleVideoPlayer.Play();
+        }
+        if (interactionVideoPlayer.isPlaying || interactionVideoPanel.activeSelf)
+        {
+            interactionVideoPlayer.Pause();
+            interactionVideoPanel.SetActive(false);
         }
     }
 }
