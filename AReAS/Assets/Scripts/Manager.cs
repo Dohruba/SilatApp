@@ -94,15 +94,43 @@ public class Manager : MonoBehaviour
 
     private void EnterIdleState()
     {
-        if (!idleVideoPlayer.isPlaying || !idleVideoPanel.activeSelf)
+        
+    }
+
+    private void ActivateVideoPlayers(bool isIdle, bool isInteraction)
+    {
+        if(isIdle && isInteraction)
         {
-            idleVideoPanel.SetActive(true);
-            idleVideoPlayer.Play();
+            throw new Exception("State error. Idle and Interaction active");
         }
-        if (interactionVideoPlayer.isPlaying || interactionVideoPanel.activeSelf)
+        VideoPlayerToggle(false, interactionVideoPlayer);
+        VideoPlayerToggle(false, idleVideoPlayer);
+
+        idleVideoPanel.SetActive(isIdle);
+        interactionVideoPanel.SetActive(isInteraction);
+
+        if (isIdle)
         {
-            interactionVideoPlayer.Pause();
-            interactionVideoPanel.SetActive(false);
+            VideoPlayerToggle(true, idleVideoPlayer);
+        }
+        else if(isInteraction)
+        {
+            VideoPlayerToggle(true, interactionVideoPlayer);
+        }
+    }
+
+
+
+    //Help functions
+    void VideoPlayerToggle(bool play, VideoPlayer player)
+    {
+        if (play)
+        {
+            player.Play();
+        }
+        else
+        {
+            player.Pause();
         }
     }
 }

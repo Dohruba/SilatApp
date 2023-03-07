@@ -719,8 +719,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   idleVideoPanel: {fileID: 231459421}
   interactionVideoPanel: {fileID: 233870991}
-  descriptionPanel: {fileID: 714998879}
-  title: {fileID: 1266008561}
+  descriptionPanel: {fileID: 714998881}
+  title: {fileID: 1266008563}
 --- !u!4 &804399030
 Transform:
   m_ObjectHideFlags: 0
