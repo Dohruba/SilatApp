@@ -94,7 +94,7 @@ public class Manager : MonoBehaviour
 
     private void EnterIdleState()
     {
-        
+        ActivateVideoPlayers(true, false);
     }
 
     private void ActivateVideoPlayers(bool isIdle, bool isInteraction)
