@@ -356,8 +356,8 @@
 -r:"Library/Bee/artifacts/1300b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/VuforiaEditorScripts.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/VuforiaScripts.ref.dll"
-"Assets/Manager.cs"
-"Assets/PageController.cs"
+"Assets/Scripts/Manager.cs"
+"Assets/Scripts/PageController.cs"
 -langversion:9.0
 
 /deterministic

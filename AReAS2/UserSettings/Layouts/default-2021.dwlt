@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 175
+  controlID: 62
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 22
+  controlID: 136
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -176,7 +176,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 134
+  controlID: 142
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -228,7 +228,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 174
+  controlID: 61
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -514,22 +514,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Videos/VideosWithVoice
+    - Assets
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Videos/VideosWithVoice
+  - Assets
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\INKA Research Group\Documents\Uni\Kuching\SilatApp\AReAS2
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 1c1b0100
-    m_LastClickedID: 72476
-    m_ExpandedIDs: 000000001a7400003674000000ca9a3bffffff7f
+    m_SelectedIDs: 56740000
+    m_LastClickedID: 29782
+    m_ExpandedIDs: 000000005674000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -557,7 +557,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000001a740000
+    m_ExpandedIDs: 0000000056740000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -584,22 +584,22 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000c0e000000000000016910000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Videos
-      m_OriginalName: Videos
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 29750
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 6}
     m_CreateAssetUtility:
@@ -687,7 +687,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: bae7ffffe6e7ffff12e8ffff46e8fffffcedffff00eeffff04fbffff30fbffff32fbffff0a5d00003e5d0000
+      m_ExpandedIDs: bcb8fffffecdffff52e3ffff32fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -969,9 +969,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.011567812, y: 0.17719549, z: -0.33408234}
+    m_Target: {x: 0.2935748, y: 0.36650777, z: -0.90946054}
     speed: 2
-    m_Value: {x: -0.011567812, y: 0.17719549, z: -0.33408234}
+    m_Value: {x: 0.2935748, y: 0.36650777, z: -0.90946054}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1018,13 +1018,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.34288225, y: -0.045068353, z: 0.01646651, w: 0.9381626}
+    m_Target: {x: 0.34327298, y: 0.0056348676, z: -0.0020599228, w: 0.939232}
     speed: 2
-    m_Value: {x: 0.34428573, y: -0.045043163, z: 0.016533934, w: 0.9376381}
+    m_Value: {x: 0.3432645, y: 0.0070436066, z: -0.0025747924, w: 0.93920887}
   m_Size:
-    m_Target: 0.1711477
+    m_Target: 0.056623332
     speed: 2
-    m_Value: 0.3008579
+    m_Value: 0.054185007
   m_Ortho:
     m_Target: 0
     speed: 2

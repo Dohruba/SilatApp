@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 7969728786797533862}
   - component: {fileID: 6676342140082283285}
   - component: {fileID: 425111525116048926}
-  - component: {fileID: 9217632809080600363}
   m_Layer: 0
   m_Name: BookletNormalMarker
   m_TagString: Page
@@ -61,7 +60,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 9217632809080600363}
+  mPreview: {fileID: 0}
 --- !u!114 &425111525116048926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,25 +165,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &9217632809080600363
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1404100462894654423}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 6676342140082283285}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: TestQR
-  mDatasetName: 
-  mCastedBehaviour: {fileID: 6676342140082283285}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!1001 &7845853933301663676
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -202,7 +182,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7616013844588128006, guid: 420305cd50166f641ae4dc053f8848a9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.167
+      value: -0.101
       objectReference: {fileID: 0}
     - target: {fileID: 7616013844588128006, guid: 420305cd50166f641ae4dc053f8848a9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -210,7 +190,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7616013844588128006, guid: 420305cd50166f641ae4dc053f8848a9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.082
       objectReference: {fileID: 0}
     - target: {fileID: 7616013844588128006, guid: 420305cd50166f641ae4dc053f8848a9, type: 3}
       propertyPath: m_LocalRotation.w
