@@ -33,6 +33,11 @@ public class Manager : MonoBehaviour
 
     private void Start()
     {
+        Debug.Log(WebCamTexture.devices.Length);
+        for(int i = 0; i <= WebCamTexture.devices.Length;i++)
+        {
+        Debug.Log(WebCamTexture.devices[i].name);
+        }
         idleVideoPlayer = idleVideoPanel.GetComponent<VideoPlayer>();
         interactionVideoPlayer = interactionVideoPanel.GetComponent<VideoPlayer>();
         state = State.idle;
