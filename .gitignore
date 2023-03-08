@@ -13,6 +13,17 @@ AReAS/[Uu]ser[Ss]ettings/
 AReAS/[Rr]ecordings/
 AReAS/[Aa]ssets/Plugins/Editor/JetBrains*
 
+AReAS2/[Ll]ibrary/
+AReAS2/[Tt]emp/
+AReAS2/[Oo]bj/
+AReAS2/[Bb]uild/
+AReAS2/[Bb]uilds/
+AReAS2/[Ll]ogs/
+AReAS2/[Mm]emoryCaptures/
+AReAS2/[Uu]ser[Ss]ettings/
+AReAS2/[Rr]ecordings/
+AReAS2/[Aa]ssets/Plugins/Editor/JetBrains*
+
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
 

@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
+    <ImageTarget name="silat_13" size="0.295000 0.295000" />
+    <ImageTarget name="silat_12" size="0.295000 0.295000" />
+    <ImageTarget name="silat_11" size="0.295000 0.295000" />
+    <ImageTarget name="silat_10" size="0.295000 0.295000" />
+    <ImageTarget name="silat_9" size="0.295000 0.295000" />
+    <ImageTarget name="silat_8" size="0.295000 0.295000" />
+    <ImageTarget name="silat_7" size="0.295000 0.295000" />
+    <ImageTarget name="silat_6" size="0.295000 0.295000" />
     <ImageTarget name="silat_5" size="0.295000 0.295000" />
     <ImageTarget name="silat_4" size="0.295000 0.295000" />
     <ImageTarget name="silat_3" size="0.295000 0.295000" />

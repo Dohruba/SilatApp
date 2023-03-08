@@ -13,6 +13,7 @@ public class Manager : MonoBehaviour
     private static Language chosenLanguage = Language.english;
 
     public static Language ChosenLanguage { get => chosenLanguage; set => chosenLanguage = value; }
+    
 
 
     private void Start()

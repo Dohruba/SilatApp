@@ -115,9 +115,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 4093234879158300987}
-        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: Play
+      - m_Target: {fileID: 5458320037775389445}
+        m_TargetAssemblyTypeName: PageController, Assembly-CSharp
+        m_MethodName: SetLanguage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -129,22 +129,22 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 5458320037775389445}
         m_TargetAssemblyTypeName: PageController, Assembly-CSharp
-        m_MethodName: StartElevation
-        m_Mode: 1
+        m_MethodName: SetIsOn
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
   OnTargetLost:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4093234879158300987}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: Stop
+        m_MethodName: Pause
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -156,8 +156,8 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 5458320037775389445}
         m_TargetAssemblyTypeName: PageController, Assembly-CSharp
-        m_MethodName: StartDelevation
-        m_Mode: 1
+        m_MethodName: SetIsOn
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -206,7 +206,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7616013844588128006, guid: 01275fe7fc351754db37b9a765377d18, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.0007
       objectReference: {fileID: 0}
     - target: {fileID: 7616013844588128006, guid: 01275fe7fc351754db37b9a765377d18, type: 3}
       propertyPath: m_LocalPosition.y
@@ -214,11 +214,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7616013844588128006, guid: 01275fe7fc351754db37b9a765377d18, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.001
       objectReference: {fileID: 0}
     - target: {fileID: 7616013844588128006, guid: 01275fe7fc351754db37b9a765377d18, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7616013844588128006, guid: 01275fe7fc351754db37b9a765377d18, type: 3}
       propertyPath: m_LocalRotation.x
@@ -226,7 +226,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7616013844588128006, guid: 01275fe7fc351754db37b9a765377d18, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7616013844588128006, guid: 01275fe7fc351754db37b9a765377d18, type: 3}
       propertyPath: m_LocalRotation.z
@@ -238,7 +238,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7616013844588128006, guid: 01275fe7fc351754db37b9a765377d18, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 7616013844588128006, guid: 01275fe7fc351754db37b9a765377d18, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z

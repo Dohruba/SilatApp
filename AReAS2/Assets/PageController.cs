@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Video;
 
 public class PageController : MonoBehaviour
 {
@@ -13,17 +14,38 @@ public class PageController : MonoBehaviour
     [SerializeField]
     private GameObject model;
 
+    [Space]
+    [SerializeField]
+    private VideoClip videoEN;
+    [SerializeField]
+    private VideoClip videoMY;
+    [SerializeField]
+    private VideoPlayer player;
+
+
     [SerializeField]
     private bool isOn = false;
+    public bool isVideo = false;
 
     private float speed = 0.01f;
     // Start is called before the first frame update
     void Start()
     {
-        //SetLanguage();
     }
 
     public void SetLanguage()
+    {
+        if (isVideo)
+        {
+            SetVideoLanguage();
+        }
+        else
+        {
+            SetAudioLanguage();
+        }
+    }
+
+    private void SetAudioLanguage()
     {
         Debug.Log("Language Update called on page");
         if (audioSource.clip != null)
@@ -43,6 +65,28 @@ public class PageController : MonoBehaviour
             Debug.Log("Language: Malay");
         }
         audioSource.Play();
+    }
+
+    private void SetVideoLanguage()
+    {
+        Debug.Log("Language Update called on page");
+        if (audioSource.clip != null)
+        {
+
+            Debug.Log("Stopping video");
+            player.Stop();
+        }
+        if (Manager.ChosenLanguage == Language.english) //set language according to manager
+        {
+            player.clip = videoEN;
+            Debug.Log("Language: English");
+        }
+        else
+        {
+            player.clip = videoMY;
+            Debug.Log("Language: Malay");
+        }
+        player.Play();
     }
     private IEnumerator ElevateModel(bool up)
     {

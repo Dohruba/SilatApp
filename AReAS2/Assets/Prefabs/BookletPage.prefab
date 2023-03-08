@@ -183,6 +183,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioEN: {fileID: 0}
   audioMY: {fileID: 0}
+  audioSource: {fileID: 0}
+  model: {fileID: 0}
+  videoEN: {fileID: 0}
+  videoMY: {fileID: 0}
+  player: {fileID: 0}
+  isOn: 0
+  isVideo: 1
 --- !u!1 &7856862423395654947
 GameObject:
   m_ObjectHideFlags: 0

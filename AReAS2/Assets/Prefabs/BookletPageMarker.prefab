@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 7969728786797533862}
   - component: {fileID: 6676342140082283285}
   - component: {fileID: 425111525116048926}
-  - component: {fileID: 6113473545139679282}
   m_Layer: 0
   m_Name: BookletPageMarker
   m_TagString: Page
@@ -50,7 +49,7 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: silat_4
+  mTrackableName: silat_1
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/SilatMarker.xml
   mAspectRatio: 1
@@ -61,7 +60,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 6113473545139679282}
+  mPreview: {fileID: 0}
 --- !u!114 &425111525116048926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190,25 +189,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &6113473545139679282
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1404100462894654423}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 6676342140082283285}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: silat_4
-  mDatasetName: Vuforia/SilatMarker.xml
-  mCastedBehaviour: {fileID: 6676342140082283285}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!1001 &3479943942203922767
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -242,7 +222,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7616013844588128006, guid: c3c857f801f523c4a930197a91eb8d66, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.001
       objectReference: {fileID: 0}
     - target: {fileID: 7616013844588128006, guid: c3c857f801f523c4a930197a91eb8d66, type: 3}
       propertyPath: m_LocalPosition.y
@@ -250,11 +230,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7616013844588128006, guid: c3c857f801f523c4a930197a91eb8d66, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.001
       objectReference: {fileID: 0}
     - target: {fileID: 7616013844588128006, guid: c3c857f801f523c4a930197a91eb8d66, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7616013844588128006, guid: c3c857f801f523c4a930197a91eb8d66, type: 3}
       propertyPath: m_LocalRotation.x
@@ -262,7 +242,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7616013844588128006, guid: c3c857f801f523c4a930197a91eb8d66, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7616013844588128006, guid: c3c857f801f523c4a930197a91eb8d66, type: 3}
       propertyPath: m_LocalRotation.z
@@ -274,7 +254,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7616013844588128006, guid: c3c857f801f523c4a930197a91eb8d66, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 7616013844588128006, guid: c3c857f801f523c4a930197a91eb8d66, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
