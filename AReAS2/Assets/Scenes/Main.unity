@@ -5153,25 +5153,41 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 425111525116048926, guid: 1f048d7a5b5ed9b439b22c4d56230ac6, type: 3}
+      propertyPath: OnTargetLost.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 425111525116048926, guid: 1f048d7a5b5ed9b439b22c4d56230ac6, type: 3}
+      propertyPath: OnTargetFound.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 425111525116048926, guid: 1f048d7a5b5ed9b439b22c4d56230ac6, type: 3}
       propertyPath: OnTargetLost.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
-      value: 1
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 425111525116048926, guid: 1f048d7a5b5ed9b439b22c4d56230ac6, type: 3}
       propertyPath: OnTargetFound.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 425111525116048926, guid: 1f048d7a5b5ed9b439b22c4d56230ac6, type: 3}
+      propertyPath: OnTargetLost.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 326017596}
+    - target: {fileID: 425111525116048926, guid: 1f048d7a5b5ed9b439b22c4d56230ac6, type: 3}
       propertyPath: OnTargetLost.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1078705598}
     - target: {fileID: 425111525116048926, guid: 1f048d7a5b5ed9b439b22c4d56230ac6, type: 3}
       propertyPath: OnTargetFound.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 395862030}
     - target: {fileID: 425111525116048926, guid: 1f048d7a5b5ed9b439b22c4d56230ac6, type: 3}
+      propertyPath: OnTargetFound.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 326017596}
+    - target: {fileID: 425111525116048926, guid: 1f048d7a5b5ed9b439b22c4d56230ac6, type: 3}
       propertyPath: OnTargetFound.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1078705598}
     - target: {fileID: 425111525116048926, guid: 1f048d7a5b5ed9b439b22c4d56230ac6, type: 3}
       propertyPath: OnTargetLost.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
       value: 2
@@ -5181,20 +5197,36 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 425111525116048926, guid: 1f048d7a5b5ed9b439b22c4d56230ac6, type: 3}
+      propertyPath: OnTargetLost.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 425111525116048926, guid: 1f048d7a5b5ed9b439b22c4d56230ac6, type: 3}
       propertyPath: OnTargetLost.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: 
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 425111525116048926, guid: 1f048d7a5b5ed9b439b22c4d56230ac6, type: 3}
+      propertyPath: OnTargetFound.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: SetActive
       objectReference: {fileID: 0}
     - target: {fileID: 425111525116048926, guid: 1f048d7a5b5ed9b439b22c4d56230ac6, type: 3}
       propertyPath: OnTargetFound.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: SetIsOn
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 425111525116048926, guid: 1f048d7a5b5ed9b439b22c4d56230ac6, type: 3}
+      propertyPath: OnTargetLost.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 425111525116048926, guid: 1f048d7a5b5ed9b439b22c4d56230ac6, type: 3}
       propertyPath: OnTargetLost.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
-      value: 
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 425111525116048926, guid: 1f048d7a5b5ed9b439b22c4d56230ac6, type: 3}
+      propertyPath: OnTargetFound.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 425111525116048926, guid: 1f048d7a5b5ed9b439b22c4d56230ac6, type: 3}
       propertyPath: OnTargetFound.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
-      value: PageController, Assembly-CSharp
+      value: UnityEngine.GameObject, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 425111525116048926, guid: 1f048d7a5b5ed9b439b22c4d56230ac6, type: 3}
       propertyPath: OnTargetFound.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_BoolArgument
@@ -5202,7 +5234,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 425111525116048926, guid: 1f048d7a5b5ed9b439b22c4d56230ac6, type: 3}
       propertyPath: OnTargetLost.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: 
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 425111525116048926, guid: 1f048d7a5b5ed9b439b22c4d56230ac6, type: 3}
       propertyPath: OnTargetFound.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -5341,8 +5373,8 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     m_RemovedComponents:
+    - {fileID: 0}
     - {fileID: 9217632809080600363, guid: 1f048d7a5b5ed9b439b22c4d56230ac6, type: 3}
-    - {fileID: 5458320037775389445, guid: 1f048d7a5b5ed9b439b22c4d56230ac6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1f048d7a5b5ed9b439b22c4d56230ac6, type: 3}
 --- !u!1 &1007925325 stripped
 GameObject:
@@ -6772,7 +6804,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Change Headgear
+  m_text: "Change \nHeadgear"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6987,7 +7019,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Change Belt '
+  m_text: "Change \nBelt "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
