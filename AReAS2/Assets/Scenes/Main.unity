@@ -154,10 +154,26 @@ PrefabInstance:
       propertyPath: m_VideoClip
       value: 
       objectReference: {fileID: 32900000, guid: 007e5d6e726e345448fcd08e83f3a77f, type: 3}
+    - target: {fileID: 2885774657017725778, guid: 79bcc9ed158833545a2582cc474f6e20, type: 3}
+      propertyPath: m_DirectAudioMutes.Array.data[0]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489728773107417886, guid: 79bcc9ed158833545a2582cc474f6e20, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 31571637}
     - target: {fileID: 4489728773107417886, guid: 79bcc9ed158833545a2582cc474f6e20, type: 3}
       propertyPath: isVideo
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4489728773107417886, guid: 79bcc9ed158833545a2582cc474f6e20, type: 3}
+      propertyPath: videoEN
+      value: 
+      objectReference: {fileID: 32900000, guid: f99e59803c2e5644aa502dc5596d820a, type: 3}
+    - target: {fileID: 4489728773107417886, guid: 79bcc9ed158833545a2582cc474f6e20, type: 3}
+      propertyPath: videoMY
+      value: 
+      objectReference: {fileID: 32900000, guid: a9f90946986fa6849a31a461fbcd5756, type: 3}
     - target: {fileID: 5926776920556517774, guid: 79bcc9ed158833545a2582cc474f6e20, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -173,7 +189,7 @@ PrefabInstance:
     - target: {fileID: 6676342140082283285, guid: 79bcc9ed158833545a2582cc474f6e20, type: 3}
       propertyPath: mPreview
       value: 
-      objectReference: {fileID: 1310013450}
+      objectReference: {fileID: 0}
     - target: {fileID: 6676342140082283285, guid: 79bcc9ed158833545a2582cc474f6e20, type: 3}
       propertyPath: mAspectRatio
       value: 1
@@ -262,6 +278,11 @@ PrefabInstance:
     - {fileID: 0}
     - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 79bcc9ed158833545a2582cc474f6e20, type: 3}
+--- !u!328 &31571637 stripped
+VideoPlayer:
+  m_CorrespondingSourceObject: {fileID: 2885774657017725778, guid: 79bcc9ed158833545a2582cc474f6e20, type: 3}
+  m_PrefabInstance: {fileID: 31571636}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &64680315
 GameObject:
   m_ObjectHideFlags: 0
@@ -491,45 +512,7 @@ MonoBehaviour:
   m_Script: {fileID: -1631628248, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &137617280
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 137617276}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 137617278}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: silat_6
-  mDatasetName: Vuforia/SilatMarker.xml
-  mCastedBehaviour: {fileID: 137617278}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &137617281
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 137617276}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 137617278}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: silat_6
-  mDatasetName: Vuforia/SilatMarker.xml
-  mCastedBehaviour: {fileID: 137617278}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
---- !u!114 &137617284
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -564,45 +547,7 @@ MonoBehaviour:
   m_Script: {fileID: -1631628248, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &149512547
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 149512538}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 149512541}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: silat_2
-  mDatasetName: Vuforia/SilatMarker.xml
-  mCastedBehaviour: {fileID: 149512541}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
---- !u!114 &149512548
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 149512538}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 149512541}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: silat_2
-  mDatasetName: Vuforia/SilatMarker.xml
-  mCastedBehaviour: {fileID: 149512541}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
---- !u!114 &149512551
+--- !u!114 &149512544
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -652,10 +597,26 @@ PrefabInstance:
       propertyPath: m_VideoClip
       value: 
       objectReference: {fileID: 32900000, guid: a6ac906f09d24e541b2520aa5f699921, type: 3}
+    - target: {fileID: 2885774657017725778, guid: 79bcc9ed158833545a2582cc474f6e20, type: 3}
+      propertyPath: m_DirectAudioMutes.Array.data[0]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489728773107417886, guid: 79bcc9ed158833545a2582cc474f6e20, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 214072418}
     - target: {fileID: 4489728773107417886, guid: 79bcc9ed158833545a2582cc474f6e20, type: 3}
       propertyPath: isVideo
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4489728773107417886, guid: 79bcc9ed158833545a2582cc474f6e20, type: 3}
+      propertyPath: videoEN
+      value: 
+      objectReference: {fileID: 32900000, guid: c2e75928d3e8f60499c65ea9926f4ca3, type: 3}
+    - target: {fileID: 4489728773107417886, guid: 79bcc9ed158833545a2582cc474f6e20, type: 3}
+      propertyPath: videoMY
+      value: 
+      objectReference: {fileID: 32900000, guid: 9af5b52145219244cb81e10fe39eaca3, type: 3}
     - target: {fileID: 5926776920556517774, guid: 79bcc9ed158833545a2582cc474f6e20, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -671,7 +632,7 @@ PrefabInstance:
     - target: {fileID: 6676342140082283285, guid: 79bcc9ed158833545a2582cc474f6e20, type: 3}
       propertyPath: mPreview
       value: 
-      objectReference: {fileID: 1562724092}
+      objectReference: {fileID: 0}
     - target: {fileID: 6676342140082283285, guid: 79bcc9ed158833545a2582cc474f6e20, type: 3}
       propertyPath: mAspectRatio
       value: 1
@@ -760,6 +721,11 @@ PrefabInstance:
     - {fileID: 0}
     - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 79bcc9ed158833545a2582cc474f6e20, type: 3}
+--- !u!328 &214072418 stripped
+VideoPlayer:
+  m_CorrespondingSourceObject: {fileID: 2885774657017725778, guid: 79bcc9ed158833545a2582cc474f6e20, type: 3}
+  m_PrefabInstance: {fileID: 214072417}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &395862029
 GameObject:
   m_ObjectHideFlags: 0
@@ -4064,45 +4030,7 @@ MonoBehaviour:
   m_Script: {fileID: -1631628248, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &675551320
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 675551312}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 675551314}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: silat_1
-  mDatasetName: Vuforia/SilatMarker.xml
-  mCastedBehaviour: {fileID: 675551314}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
---- !u!114 &675551321
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 675551312}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 675551314}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: silat_1
-  mDatasetName: Vuforia/SilatMarker.xml
-  mCastedBehaviour: {fileID: 675551314}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
---- !u!114 &675551324
+--- !u!114 &675551317
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4215,7 +4143,7 @@ PrefabInstance:
     - target: {fileID: 6676342140082283285, guid: 245e05869c2901844a1a8a7e08264130, type: 3}
       propertyPath: mPreview
       value: 
-      objectReference: {fileID: 137617284}
+      objectReference: {fileID: 0}
     - target: {fileID: 6676342140082283285, guid: 245e05869c2901844a1a8a7e08264130, type: 3}
       propertyPath: mAspectRatio
       value: 1
@@ -4235,6 +4163,18 @@ PrefabInstance:
     - target: {fileID: 6676342140082283285, guid: 245e05869c2901844a1a8a7e08264130, type: 3}
       propertyPath: mImageTargetType
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7126828275857448429, guid: 245e05869c2901844a1a8a7e08264130, type: 3}
+      propertyPath: audioEN
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7126828275857448429, guid: 245e05869c2901844a1a8a7e08264130, type: 3}
+      propertyPath: audioMY
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7126828275857448429, guid: 245e05869c2901844a1a8a7e08264130, type: 3}
+      propertyPath: audioSource
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7969728786797533862, guid: 245e05869c2901844a1a8a7e08264130, type: 3}
       propertyPath: m_RootOrder
@@ -4486,45 +4426,7 @@ MonoBehaviour:
   m_Script: {fileID: -1631628248, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &877157787
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 877157783}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 877157785}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: silat_8
-  mDatasetName: Vuforia/SilatMarker.xml
-  mCastedBehaviour: {fileID: 877157785}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &877157788
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 877157783}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 877157785}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: silat_8
-  mDatasetName: Vuforia/SilatMarker.xml
-  mCastedBehaviour: {fileID: 877157785}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
---- !u!114 &877157791
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4559,45 +4461,7 @@ MonoBehaviour:
   m_Script: {fileID: -1631628248, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &884721684
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 884721680}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 884721682}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: silat_7
-  mDatasetName: Vuforia/SilatMarker.xml
-  mCastedBehaviour: {fileID: 884721682}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &884721685
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 884721680}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 884721682}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: silat_7
-  mDatasetName: Vuforia/SilatMarker.xml
-  mCastedBehaviour: {fileID: 884721682}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
---- !u!114 &884721688
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4945,7 +4809,8 @@ PrefabInstance:
       propertyPath: mMeshRenderer
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 9217632809080600363, guid: 1f048d7a5b5ed9b439b22c4d56230ac6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1f048d7a5b5ed9b439b22c4d56230ac6, type: 3}
 --- !u!1001 &1007925324
 PrefabInstance:
@@ -5142,7 +5007,8 @@ PrefabInstance:
       propertyPath: mMeshRenderer
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 9217632809080600363, guid: 1f048d7a5b5ed9b439b22c4d56230ac6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1f048d7a5b5ed9b439b22c4d56230ac6, type: 3}
 --- !u!1001 &1017761565
 PrefabInstance:
@@ -5387,10 +5253,26 @@ PrefabInstance:
       propertyPath: m_VideoClip
       value: 
       objectReference: {fileID: 32900000, guid: c20dc82dee8821d459bc13124646e617, type: 3}
+    - target: {fileID: 2885774657017725778, guid: 79bcc9ed158833545a2582cc474f6e20, type: 3}
+      propertyPath: m_DirectAudioMutes.Array.data[0]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489728773107417886, guid: 79bcc9ed158833545a2582cc474f6e20, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1103540473}
     - target: {fileID: 4489728773107417886, guid: 79bcc9ed158833545a2582cc474f6e20, type: 3}
       propertyPath: isVideo
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4489728773107417886, guid: 79bcc9ed158833545a2582cc474f6e20, type: 3}
+      propertyPath: videoEN
+      value: 
+      objectReference: {fileID: 32900000, guid: 2bf34ba86ea788b42a4e0ff5e905c9a6, type: 3}
+    - target: {fileID: 4489728773107417886, guid: 79bcc9ed158833545a2582cc474f6e20, type: 3}
+      propertyPath: videoMY
+      value: 
+      objectReference: {fileID: 32900000, guid: 5302f7f9f6fdf1343a9a857979aa2ea6, type: 3}
     - target: {fileID: 5926776920556517774, guid: 79bcc9ed158833545a2582cc474f6e20, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -5406,7 +5288,7 @@ PrefabInstance:
     - target: {fileID: 6676342140082283285, guid: 79bcc9ed158833545a2582cc474f6e20, type: 3}
       propertyPath: mPreview
       value: 
-      objectReference: {fileID: 149512551}
+      objectReference: {fileID: 0}
     - target: {fileID: 6676342140082283285, guid: 79bcc9ed158833545a2582cc474f6e20, type: 3}
       propertyPath: mAspectRatio
       value: 1
@@ -5495,6 +5377,11 @@ PrefabInstance:
     - {fileID: 0}
     - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 79bcc9ed158833545a2582cc474f6e20, type: 3}
+--- !u!328 &1103540473 stripped
+VideoPlayer:
+  m_CorrespondingSourceObject: {fileID: 2885774657017725778, guid: 79bcc9ed158833545a2582cc474f6e20, type: 3}
+  m_PrefabInstance: {fileID: 1103540472}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1114178865
 GameObject:
   m_ObjectHideFlags: 0
@@ -5589,45 +5476,7 @@ MonoBehaviour:
   m_Script: {fileID: -1631628248, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1310013446
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1310013437}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1310013440}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: silat_4
-  mDatasetName: Vuforia/SilatMarker.xml
-  mCastedBehaviour: {fileID: 1310013440}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
---- !u!114 &1310013447
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1310013437}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1310013440}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: silat_4
-  mDatasetName: Vuforia/SilatMarker.xml
-  mCastedBehaviour: {fileID: 1310013440}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
---- !u!114 &1310013450
+--- !u!114 &1310013443
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5756,7 +5605,7 @@ PrefabInstance:
     - target: {fileID: 6676342140082283285, guid: 79bcc9ed158833545a2582cc474f6e20, type: 3}
       propertyPath: mPreview
       value: 
-      objectReference: {fileID: 675551324}
+      objectReference: {fileID: 0}
     - target: {fileID: 6676342140082283285, guid: 79bcc9ed158833545a2582cc474f6e20, type: 3}
       propertyPath: mDataSetPath
       value: Vuforia/SilatMarker.xml
@@ -6057,10 +5906,26 @@ PrefabInstance:
       propertyPath: m_VideoClip
       value: 
       objectReference: {fileID: 32900000, guid: 818bf44f5a0a6934eb3a08e52c74346e, type: 3}
+    - target: {fileID: 2885774657017725778, guid: 79bcc9ed158833545a2582cc474f6e20, type: 3}
+      propertyPath: m_DirectAudioMutes.Array.data[0]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489728773107417886, guid: 79bcc9ed158833545a2582cc474f6e20, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1513940627}
     - target: {fileID: 4489728773107417886, guid: 79bcc9ed158833545a2582cc474f6e20, type: 3}
       propertyPath: isVideo
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4489728773107417886, guid: 79bcc9ed158833545a2582cc474f6e20, type: 3}
+      propertyPath: videoEN
+      value: 
+      objectReference: {fileID: 32900000, guid: 5a2f8aef65ea24d41bd7b98500d392bb, type: 3}
+    - target: {fileID: 4489728773107417886, guid: 79bcc9ed158833545a2582cc474f6e20, type: 3}
+      propertyPath: videoMY
+      value: 
+      objectReference: {fileID: 32900000, guid: 51117c399920d6a42944976f08f4e1a8, type: 3}
     - target: {fileID: 5926776920556517774, guid: 79bcc9ed158833545a2582cc474f6e20, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -6076,7 +5941,7 @@ PrefabInstance:
     - target: {fileID: 6676342140082283285, guid: 79bcc9ed158833545a2582cc474f6e20, type: 3}
       propertyPath: mPreview
       value: 
-      objectReference: {fileID: 1736730542}
+      objectReference: {fileID: 0}
     - target: {fileID: 6676342140082283285, guid: 79bcc9ed158833545a2582cc474f6e20, type: 3}
       propertyPath: mAspectRatio
       value: 1
@@ -6165,6 +6030,11 @@ PrefabInstance:
     - {fileID: 0}
     - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 79bcc9ed158833545a2582cc474f6e20, type: 3}
+--- !u!328 &1513940627 stripped
+VideoPlayer:
+  m_CorrespondingSourceObject: {fileID: 2885774657017725778, guid: 79bcc9ed158833545a2582cc474f6e20, type: 3}
+  m_PrefabInstance: {fileID: 1513940626}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1562724079 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1404100462894654423, guid: 79bcc9ed158833545a2582cc474f6e20, type: 3}
@@ -6181,45 +6051,7 @@ MonoBehaviour:
   m_Script: {fileID: -1631628248, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1562724088
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1562724079}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1562724082}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: silat_3
-  mDatasetName: Vuforia/SilatMarker.xml
-  mCastedBehaviour: {fileID: 1562724082}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
---- !u!114 &1562724089
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1562724079}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1562724082}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: silat_3
-  mDatasetName: Vuforia/SilatMarker.xml
-  mCastedBehaviour: {fileID: 1562724082}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
---- !u!114 &1562724092
+--- !u!114 &1562724085
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6254,45 +6086,7 @@ MonoBehaviour:
   m_Script: {fileID: -1631628248, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1736730538
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1736730529}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1736730532}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: silat_5
-  mDatasetName: Vuforia/SilatMarker.xml
-  mCastedBehaviour: {fileID: 1736730532}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
---- !u!114 &1736730539
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1736730529}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1736730532}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: silat_5
-  mDatasetName: Vuforia/SilatMarker.xml
-  mCastedBehaviour: {fileID: 1736730532}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
---- !u!114 &1736730542
+--- !u!114 &1736730535
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6546,7 +6340,7 @@ PrefabInstance:
     - target: {fileID: 6676342140082283285, guid: 245e05869c2901844a1a8a7e08264130, type: 3}
       propertyPath: mPreview
       value: 
-      objectReference: {fileID: 884721688}
+      objectReference: {fileID: 0}
     - target: {fileID: 6676342140082283285, guid: 245e05869c2901844a1a8a7e08264130, type: 3}
       propertyPath: mAspectRatio
       value: 1
@@ -6745,7 +6539,7 @@ PrefabInstance:
     - target: {fileID: 6676342140082283285, guid: 245e05869c2901844a1a8a7e08264130, type: 3}
       propertyPath: mPreview
       value: 
-      objectReference: {fileID: 877157791}
+      objectReference: {fileID: 0}
     - target: {fileID: 6676342140082283285, guid: 245e05869c2901844a1a8a7e08264130, type: 3}
       propertyPath: mAspectRatio
       value: 1
