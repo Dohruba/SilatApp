@@ -6,6 +6,8 @@ public class AttireInteraction : MonoBehaviour
 {
     public GameObject[] belts;
     public GameObject[] headgears;
+    public GameObject[] beltDescriptions;
+    public GameObject[] headDescriptions;
     private int currentIndexBelt = 0;
     private int currentIndexHead = 0;
 
@@ -25,6 +27,21 @@ public class AttireInteraction : MonoBehaviour
         }
 
         headgears[0].SetActive(true);
+
+        foreach (GameObject beltDescription in beltDescriptions)
+        {
+            beltDescription.SetActive(false);
+        }
+
+        beltDescriptions[0].SetActive(true);
+
+        foreach (GameObject headDescription in headDescriptions)
+        {
+            headDescription.SetActive(false);
+        }
+
+        headDescriptions[0].SetActive(true);
+
     }
 
     public void OnBeltButtonClick()
@@ -41,6 +58,18 @@ public class AttireInteraction : MonoBehaviour
         belts[currentIndexBelt].SetActive(true);
         belts[(currentIndexBelt + belts.Length - 1) % belts.Length].SetActive(false);
 
+        // Update belt descriptions to match current index
+        for (int i = 0; i < beltDescriptions.Length; i++)
+        {
+            if (i == currentIndexBelt)
+            {
+                beltDescriptions[i].SetActive(true);
+            }
+            else
+            {
+                beltDescriptions[i].SetActive(false);
+            }
+        }
     }
 
     public void OnHeadButtonClick()
@@ -56,7 +85,19 @@ public class AttireInteraction : MonoBehaviour
 
         headgears[currentIndexHead].SetActive(true);
         headgears[(currentIndexHead + headgears.Length - 1) % headgears.Length].SetActive(false);
-    
+
+        // Update headgear descriptions to match current index
+        for (int i = 0; i < headDescriptions.Length; i++)
+        {
+            if (i == currentIndexHead)
+            {
+                headDescriptions[i].SetActive(true);
+            }
+            else
+            {
+                headDescriptions[i].SetActive(false);
+            }
+        }
     }
 
     // Update is called once per frame
