@@ -68,4 +68,18 @@ public class Manager : MonoBehaviour
         }
         Debug.Log("Update language: " + ChosenLanguage.ToString());
     }
+
+    public void OnTapRewindVideo(bool forward)
+    {
+        GameObject[] activePlayers = GameObject.FindGameObjectsWithTag("Page");
+        bool isOn;
+        foreach(GameObject activePlayer in activePlayers)
+        {
+            isOn = activePlayer.GetComponentInChildren<PageController>().GetIsOn();
+            if(activePlayer != null && isOn)
+            {
+                activePlayer.GetComponentInChildren<PageController>().OnClickChangePlayerTime( forward);
+            }
+        }
+    }
 }

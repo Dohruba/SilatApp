@@ -134,4 +134,9 @@ public class PageController : MonoBehaviour
     {
         return isOn;
     }
+
+    public void OnClickChangePlayerTime( bool isForward)
+    {
+        player.time += isForward ? 5 : -5;
+    }
 }
